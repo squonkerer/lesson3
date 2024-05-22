@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import City from './City';
+import City2 from './City2';
+import Counter from './Counter.js';
+import frog from './frog.png';
+
+/*const moreCities = [
+  {
+    cityName: 'Tallinn'
+  },
+  {
+    cityName: 'New-York'
+  },
+  {
+    cityName: 'London'
+  }
+]*/
 
 function App() {
+  //const moreCitiesJsx = moreCities.map((city) => <City name={cityName}/>)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Favorite cities</h1>
+      <City name="London" country="GB" remarks = "free-for-all"/>
+      <City name="New-York" country="USA"/>
+      <City name="Tallinn" country="EST"/>
+      <City2 name="Blizzard" image={frog}/>
+      <Counter/>
     </div>
   );
 }
