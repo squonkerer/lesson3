@@ -25,7 +25,6 @@ function App() {
       <City name="New-York" country="USA"/>
       <City name="Tallinn" country="EST"/>
       <City2 name="Blizzard" image={frog}/>
-      <Counter/>
     </div>
   );
 }
